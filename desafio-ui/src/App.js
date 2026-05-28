@@ -22,7 +22,7 @@ function App() {
     <main className="app-shell">
       <section className="app-header">
         <div>
-          <p className="eyebrow">Koode fullstack challenge</p>
+          <p className="eyebrow">Fullstack challenge</p>
           <h1>Gerenciador de tarefas</h1>
         </div>
         <span className="task-count">{tasks.length} tarefas</span>

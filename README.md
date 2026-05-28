@@ -20,11 +20,47 @@ persistencia em SQLite e interface React.
 
 ## Como executar
 
-### Backend
+### Instalacao
+
+Na primeira vez, instale as dependencias do backend e do frontend:
 
 ```bash
 cd desafio.API
 dotnet restore
+```
+
+```bash
+cd ../desafio-ui
+npm install
+```
+
+No Windows, se o PowerShell bloquear `npm`, use `npm.cmd install`.
+
+### Rodar backend e frontend juntos
+
+Depois da instalacao, na pasta raiz do projeto:
+
+```bash
+npm start
+```
+
+No Windows, se necessario:
+
+```bash
+npm.cmd start
+```
+
+Esse comando sobe:
+
+- API: `http://localhost:5000`
+- Frontend: `http://localhost:3000`
+
+### Backend
+
+Se preferir rodar separado:
+
+```bash
+cd desafio.API
 dotnet run
 ```
 
@@ -37,7 +73,6 @@ Em outro terminal:
 
 ```bash
 cd desafio-ui
-npm install
 npm start
 ```
 
@@ -45,7 +80,7 @@ O React inicia em `http://localhost:3000` e consome a API em
 `http://localhost:5000/tasks`.
 
 Tambem existe o comando `npm run start:full` dentro de `desafio-ui` para subir
-React e API ao mesmo tempo.
+React e API ao mesmo tempo a partir da pasta do frontend.
 
 Se precisar usar outra URL para a API, crie `desafio-ui/.env`:
 
