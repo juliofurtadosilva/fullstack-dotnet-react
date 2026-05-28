@@ -1,0 +1,26 @@
+﻿# Build e dependências
+bin/
+obj/
+node_modules/
+
+# Visual Studio cache
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logs
+*.log
+*.db
+*.db-shm
+*.db-wal
+
+# React build
+build/
+desafio-ui/build/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
